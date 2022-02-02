@@ -36,8 +36,8 @@ class Lane_detector:
         self._init()
 
     def _init(self):
-        # self.capture = video_cap(0, "480p", 30)
-        self.capture = video_cap("/home/vcbuild/Downloads/(seg)WIN_20210303_13_35_05_Pro.avi", "480p", 300)
+        self.capture = video_cap(0, "480p", 30)
+        # self.capture = video_cap("/home/vcbuild/Downloads/(seg)WIN_20210303_13_35_05_Pro.avi", "480p", 300)
         # self.capture = video_cap("/home/vcbuild/golf_video/210122_IRCAM.mp4", "480p", 300)
         self.cam_w, self.cam_h = self.capture.check_cam_width_height()
         # cam_w = 640
